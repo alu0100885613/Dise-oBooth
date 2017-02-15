@@ -1,4 +1,4 @@
-module ffdc #(parameter retardo = 1)(input wire clk, reset, carga, d, output reg q);
+module ffdc #(parameter retardo = 0)(input wire clk, reset, carga, d, output reg q);
 
 always @(posedge clk, posedge reset)
   if (reset)

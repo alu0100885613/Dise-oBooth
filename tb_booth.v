@@ -14,11 +14,9 @@ booth mimodulo(x,y,salida,clk,start);
 
 initial
 begin
-	clk = 1'b0;
-	start = 1'b0;
-	#4
+	clk = 1'b1;
 	start = 1'b1;
-	#3
+	#1
 	start = 1'b0;
 end
 
@@ -32,8 +30,8 @@ begin
   $dumpfile("mimodulo_tb.vcd");
   $dumpvars;
 
-x = 4'b0011;
-y = 4'b0100;
+x = 4'b0010;
+y = 4'b0010;
 
 #200;
 

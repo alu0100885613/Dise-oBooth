@@ -45,4 +45,5 @@ assign CargaA = ((q01[0]^q01[1]) & ((state == S1)|(state == S3)|(state == S5)|(s
 assign Fin = (state == S9)? 1:0;
 assign Op = ((q01[0] == 0) & (q01[1] == 1))? 1:0;
 
+
 endmodule

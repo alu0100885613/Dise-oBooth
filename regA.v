@@ -1,4 +1,4 @@
-module regA(input wire clk, ResetA, CargaA, DesplazaA, input wire [3:0] entA, output wire [3:0] q);
+module regA(input wire clk, reset, CargaA, DesplazaA, input wire [3:0] entA, output wire [3:0] q);
 
 assign enable = CargaA | DesplazaA;
 

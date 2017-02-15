@@ -6,7 +6,7 @@ wire [4:0] QtoUC;
 wire [3:0] SumToA;
 wire resetA, cargaA, cargaQ, cargaM, desplazaA, desplazaQ, UCtoSum;
 
-assign S = { AtoSum, QtoUC};
+assign S = {AtoSum, QtoUC[4:1]};
 
 regA regA1(clk,resetA,cargaA,desplazaA,SumToA,AtoSum);
 regQ regQ1(X,cargaQ,desplazaQ,clk,start,AtoSum[0],QtoUC);
