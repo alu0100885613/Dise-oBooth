@@ -30,7 +30,7 @@ begin
   $dumpfile("mimodulo_tb.vcd");
   $dumpvars;
 
-x = 4'b0010;
+x = 4'b1010;
 y = 4'b0010;
 
 #200;
